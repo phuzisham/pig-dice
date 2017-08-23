@@ -5,24 +5,26 @@
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/jquery-3.2.1.js"></script>
     <script src="js/scripts.js"></script>
-    <title>Ping Pong</title>
+    <title>Pig Dice</title>
   </head>
   <body>
     <div class="container">
-      <form class="panel">
+      <form id="p1Form">
         <div class="row">
-          <div id="p1Form" class="col-sm-6">
+          <div class="col-sm-6">
             <div class="form-group">
               <label for="p1Input">Player One Name: </label>
               <input type="text" name="p1Input">
-              <button type="button" name="p1Button">Roll The Dice</button>
+              <button type="submit" name="p1Button">Roll The Dice</button>
             </div>
           </div>
-          <div id="p2Form" class="col-sm-6">
+        </form>
+        <form id="p2Form">
+          <div class="col-sm-6">
             <div class="form-group">
               <label for="p2Input">Player Two Name: </label>
               <input type="text" name="p2Input">
-              <button type="button" name="p2Button">Roll The Dice</button>
+              <button type="submit" name="p2Button">Roll The Dice</button>
             </div>
           </div>
         </div>
