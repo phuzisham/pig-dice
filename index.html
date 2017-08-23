@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/jquery-3.2.1.js"></script>
     <script src="js/scripts.js"></script>
+    <link rel="shortcut icon" href="img/heart.ico">
     <title>Pig Dice</title>
   </head>
   <body>
@@ -34,7 +35,7 @@
           </div>
         </form>
       </div>
-      <div id="result" class="well">
+      <div class="well playerScores">
         <div class="row">
           <div class="col-sm-6">
             <h3>Player One Score: <span id="totalScore1"></span></h3>
@@ -43,6 +44,14 @@
             <h3>Player Two Score: <span id="totalScore2"></span></h3>
           </div>
         </div>
+      </div>
+      <div class="well playerOneWins">
+        <h1>Player One Wins!!!</h1>
+        <button class="playAgain" type="button" name="playAgain">Play Again</button>
+      </div>
+      <div class="well playerTwoWins">
+        <h1>Player Two Wins!!!</h1>
+        <button class="playAgain" type="button" name="playAgain">Play Again</button>
       </div>
     </div>
   </body>

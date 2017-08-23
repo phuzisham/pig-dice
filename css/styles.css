@@ -34,6 +34,16 @@ button {
   background-color: #8EE4Af;
 }
 
-#result {
+.playerScores {
+  background-color: #EDF5E1;
+}
+
+.playerOneWins {
+  display: none;
+  background-color: #EDF5E1;
+}
+
+.playerTwoWins {
+  display: none;
   background-color: #EDF5E1;
 }
