@@ -2,6 +2,7 @@
 function Player(name) {
   this.name = name;
   this.totalRoll = 0;
+  this.totalScore = 0;
 };
 
 Player.prototype.score = function(roll) {
@@ -17,13 +18,10 @@ Player.prototype.score = function(roll) {
 
 var player1 = new Player('Player One');
 var computer = new Player('Computer Player');
-var currentScore1 = 0;
-var computerScore = 0;
-
 // logic for user interface
 $(document).ready(function(){
-  $("#totalScore1").text(0);
-  $("#totalScore2").text(0);
+  $("#totalPlayerScore").text(0);
+  $("#totalComputerScore").text(0);
   $('#p1Form').submit(function(event) {
     event.preventDefault();
     var diceRoll1 = Math.floor(Math.random() * (7 - 1) + 1);
@@ -33,13 +31,13 @@ $(document).ready(function(){
   });
 
   $('#hold1').click(function() {
-    currentScore1 += player1.totalRoll;
-    if (currentScore1 >= 10) {
+    player1.totalScore += player1.totalRoll;
+    if (player1.totalScore >= 20) {
       $('.playerOneWins').show();
       $('.p1').hide();
-      $('.playerScores').hide();
+      $('.computerPlayerScores').hide();
     } else {
-      $("#totalScore1").text(currentScore1);
+      $("#totalPlayerScore").text(player1.totalScore);
       player1.totalRoll = 0;
       $('#currentRoll1').text(0);
       $('#currentTotal1').text(0);
@@ -69,14 +67,14 @@ function playerAI() {
   } else {
     computer.score(diceRoll1);
     computer.score(diceRoll2);
-    computerScore += computer.totalRoll;
-    if (computerScore >= 10) {
-      $('.playerTwoWins').show();
+    computer.totalScore += computer.totalRoll;
+    if (computer.totalScore >= 20) {
+      $('.computerWins').show();
       $('.p2').hide();
-      $('.playerScores').hide();
+      $('.computerPlayerScores').hide();
       return;
     } else {
-      $("#totalScore2").text(computerScore);
+      $("#totalComputerScore").text(computer.totalScore);
       computer.totalRoll = 0;
       $('#currentRoll2').text(0);
       $('#currentTotal2').text(0);

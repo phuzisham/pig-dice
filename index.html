@@ -14,7 +14,7 @@
     </div>
     <div class="container">
       <div class="well greeting">
-        <h2>Choose one..</h2>
+        <h2>Choose Opponent</h2>
         <button id="playPerson" type="button" name="personButton">Human</button>
         <button id="playComputer" type="button" name="computerButton">Computer</button>
       </div>
@@ -50,12 +50,26 @@
           </div>
         </div>
       </div>
+      <div class="well computerPlayerScores">
+        <div class="row">
+          <div class="col-sm-6">
+            <h3>Player One Score: <span id="totalPlayerScore"></span></h3>
+          </div>
+          <div class="col-sm-6">
+            <h3>Computer Score: <span id="totalComputerScore"></span></h3>
+          </div>
+        </div>
+      </div>
       <div class="well playerOneWins">
         <h1>Player One Wins!!!</h1>
         <button class="playAgain" type="button" name="playAgain">Play Again</button>
       </div>
       <div class="well playerTwoWins">
         <h1>Player Two Wins!!!</h1>
+        <button class="playAgain" type="button" name="playAgain">Play Again</button>
+      </div>
+      <div class="well computerWins">
+        <h1>Computer Wins!!!</h1>
         <button class="playAgain" type="button" name="playAgain">Play Again</button>
       </div>
     </div>

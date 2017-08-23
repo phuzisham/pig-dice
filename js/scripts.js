@@ -15,6 +15,6 @@ $(document).ready(function() {
     document.head.appendChild(script);
     $('.greeting').hide();
     $('.p1').show();
-    $('.playerScores').show();
+    $('.computerPlayerScores').show();
   });
 });

@@ -1,12 +1,12 @@
-# _{Ping Pong by Dan Kiss}_
+# _{Pig Dice}_
 
-#### _{This application converts your single number into an array with elements counting up to ##your number and for certain numbers removes the numbers and adds text instead}, {August 18th 2017}_
+#### _{The application allows the player to play against another player or the computer the classical game of pig dice a game where the dice is rolled often}, {August 18th 2017}_
 
-#### By _**{Dan Kiss}**_
+#### By _**{Dan Kiss & David Hale}**_
 
 ## Description
 
-_{The array elements change so 3 is updated to and outputted as ping, 5 to pong and 15 to ##ping pong. You do not have to refresh the page to run a new entry just type it in and click ##the green button to submit it.}_
+_{There are 2 objects in this game, player1/player2 or player1/AI. Player 1 gets to role a 6 sided dice numbered 1 to 6. If the number rolled is 2,3,4,5,6 the player may "hold the number" or roll again. If they hold that value is added to their total score.}_
 
 ## Setup/Installation Requirements
 

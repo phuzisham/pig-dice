@@ -40,6 +40,16 @@ button {
   background-color: #EDF5E1;
 }
 
+.computerPlayerScores {
+  display: none;
+  background-color: #EDF5E1;
+}
+
+.computerWins {
+  display: none;
+  background-color: #EDF5E1;
+}
+
 .playerOneWins {
   display: none;
   background-color: #EDF5E1;
