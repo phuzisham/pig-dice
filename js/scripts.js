@@ -13,22 +13,31 @@ Player.prototype.score = function(roll) {
 };
 var player1 = new Player('Player One');
 var player2 = new Player('Player Two');
+var currentScore1 = 0;
+var currentScore2 = 0;
 // logic for user interface
 $(document).ready(function(){
   $('#p1Form').submit(function(event) {
     event.preventDefault();
-    var name1 = $('#p1Input').val();
     var diceRoll1 = Math.floor(Math.random() * (7 - 1) + 1);
     player1.score(diceRoll1);
-    $("#output1").append(diceRoll1 + '<br>');
-    $("#output1").append(player1.totalRoll + '<br>');
+    $('#currentRoll1').text(diceRoll1);
+    $('#currentTotal1').text(player1.totalRoll);
   });
+  $('#hold1').click(function() {
+    currentScore1 += player1.totalRoll;
+    $("#totalScore1").text(currentScore1);
+  });
+
   $('#p2Form').submit(function(event) {
     event.preventDefault();
-    var name2 = $('#p2Input').val();
     var diceRoll2 = Math.floor(Math.random() * (7 - 1) + 1);
     player2.score(diceRoll2);
-    $("#output2").append(diceRoll2 + '<br>');
-    $("#output2").append(player2.totalRoll + '<br>');
+    $('#currentRoll2').text(diceRoll2);
+    $('#currentTotal2').text(player2.totalRoll);
+  });
+  $('#hold2').click(function() {
+    currentScore2 += player2.totalRoll;
+    $("#totalScore2").text(currentScore2);
   });
 });
