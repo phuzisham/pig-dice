@@ -7,6 +7,8 @@ function Player(name) {
 Player.prototype.score = function(roll) {
   if (roll === 1) {
     this.totalRoll = 0;
+    alert('Next Player Turn');
+    $('.p1,.p2').toggle();
   } else {
     this.totalRoll = this.totalRoll + roll;
   }
@@ -27,6 +29,10 @@ $(document).ready(function(){
   $('#hold1').click(function() {
     currentScore1 += player1.totalRoll;
     $("#totalScore1").text(currentScore1);
+    player1.totalRoll = 0;
+    $('#currentRoll1').text(0);
+    $('#currentTotal1').text(0);
+    $('.p1,.p2').toggle();
   });
 
   $('#p2Form').submit(function(event) {
@@ -39,5 +45,9 @@ $(document).ready(function(){
   $('#hold2').click(function() {
     currentScore2 += player2.totalRoll;
     $("#totalScore2").text(currentScore2);
+    player2.totalRoll = 0;
+    $('#currentRoll2').text(0);
+    $('#currentTotal2').text(0);
+    $('.p1,.p2').toggle();
   });
 });
