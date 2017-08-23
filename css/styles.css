@@ -15,7 +15,7 @@ body {
 button {
   margin-top: 20px;
   border-style: none;
-  color: #fff;
+  color: #EDF5E1;
   background-color: #05386B;
   border-radius: 5px;
 }
@@ -26,6 +26,7 @@ button {
 }
 
 .p1 {
+  display: none;
   background-color: #5CDB95;
 }
 
@@ -35,6 +36,7 @@ button {
 }
 
 .playerScores {
+  display: none;
   background-color: #EDF5E1;
 }
 
@@ -45,5 +47,9 @@ button {
 
 .playerTwoWins {
   display: none;
+  background-color: #EDF5E1;
+}
+
+.greeting {
   background-color: #EDF5E1;
 }
