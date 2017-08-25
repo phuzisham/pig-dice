@@ -31,7 +31,7 @@ $(document).ready(function(){
 
   $('#hold1').click(function() {
     player1.totalScore += player1.totalRoll;
-    if (player1.totalScore >= 20) {
+    if (player1.totalScore >= 50) {
       $('.playerOneWins').show();
       $('.p1').hide();
       $('.playerScores').hide();
@@ -54,7 +54,7 @@ $(document).ready(function(){
 
   $('#hold2').click(function() {
     player2.totalScore += player2.totalRoll;
-    if (player2.totalScore >= 20) {
+    if (player2.totalScore >= 50) {
       $('.playerTwoWins').show();
       $('.p2').hide();
       $('.playerScores').hide();

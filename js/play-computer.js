@@ -32,7 +32,7 @@ $(document).ready(function(){
 
   $('#hold1').click(function() {
     player1.totalScore += player1.totalRoll;
-    if (player1.totalScore >= 20) {
+    if (player1.totalScore >= 50) {
       $('.playerOneWins').show();
       $('.p1').hide();
       $('.computerPlayerScores').hide();
@@ -68,11 +68,13 @@ function playerAI() {
     computer.score(diceRoll1);
     computer.score(diceRoll2);
     computer.totalScore += computer.totalRoll;
-    if (computer.totalScore >= 20) {
+    if (computer.totalScore >= 50) {
       $('.computerWins').show();
       $('.p2').hide();
       $('.computerPlayerScores').hide();
       return;
+    } else if (computer.totalScore < player1.totalScore -10) {
+
     } else {
       $("#totalComputerScore").text(computer.totalScore);
       computer.totalRoll = 0;
