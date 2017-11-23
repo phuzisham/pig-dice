@@ -1,6 +1,6 @@
 # _Pig Dice_
 
-#### _Created: 08.26.2017_
+#### _Created: 08.24.2017_
 #### _Last Modified: 11.22.2017_
 
 #### By _**David Hale**_
