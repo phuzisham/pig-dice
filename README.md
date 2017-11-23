@@ -9,7 +9,7 @@
 
 _There are 2 objects in this game, player1/player2 or player1/AI. Player 1 gets to role a 6 sided dice numbered 1 to 6. If the number rolled is 2,3,4,5,6 the player may "hold the number" or roll again. If they hold that value is added to their total score._
 
-![Screenshot](https://github.com/phuzisham/movie-tickets/blob/master/img/cap.png "Screen Capture")
+![Screenshot](https://github.com/phuzisham/pig-dice/blob/master/img/cap.png "Screen Capture")
 
 
 ## Setup/Installation Requirements
